@@ -4,9 +4,17 @@ import com.example.dependencyinj.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.sql.SQLOutput;
 
+/*
+* By default Spring boot will look for the classes having Spring Stereotype(i.e. @Component, @Controller,
+* @RestController, @Repository, @Service) under the package having annotated with @SpringBootApplication,
+* in this case com.example.dependencyinj. But, if we need to initialize other classes in different package
+* we need mentioned with @ComponentScan with basePackages
+*/
+@ComponentScan(basePackages = {"com.example.pets", "com.example.dependencyinj"})
 @SpringBootApplication
 public class DependencyInjApplication {
 

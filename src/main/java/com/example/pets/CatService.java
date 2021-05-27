@@ -1,4 +1,4 @@
-package com.example.dependencyinj.service;
+package com.example.pets;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;

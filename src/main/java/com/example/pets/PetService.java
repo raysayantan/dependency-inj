@@ -1,4 +1,4 @@
-package com.example.dependencyinj.service;
+package com.example.pets;
 
 public interface PetService {
     String getPetType();

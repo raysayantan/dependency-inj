@@ -1,6 +1,6 @@
 package com.example.dependencyinj.controllers;
 
-import com.example.dependencyinj.service.PetService;
+import com.example.pets.PetService;
 import org.springframework.stereotype.Controller;
 
 @Controller
